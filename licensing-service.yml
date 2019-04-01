@@ -1,4 +1,4 @@
 spring:
   application:
     name: licensing-service
-
+message: "This is default profile for licensing service"
