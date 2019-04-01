@@ -3,3 +3,12 @@ server:
 spring:
   application:
     name: licensing-service
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      default-zone: http://localhost:9761/eureka/
