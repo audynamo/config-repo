@@ -22,4 +22,4 @@ zuul:
       service-id: organization-service
     licensing-service: 
       path: /licensing/**
-	  service-id: licensing-service
+      service-id: licensing-service
