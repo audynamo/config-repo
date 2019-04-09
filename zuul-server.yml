@@ -12,3 +12,10 @@ eureka:
     fetch-registry: true
     service-url:
       defaultZone: http://localhost:9761/eureka
+
+zuul:
+  ignored-services: "*"
+  prefix: /api
+  routes:
+    organization-service: /organization/**
+    licensing-service: /licensing/**
