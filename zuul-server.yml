@@ -18,7 +18,7 @@ zuul:
   prefix: /api
   routes:
     organization-service:
-    path: /organization/**
+      path: /organization/**
       service-id: organization-service
     licensing-service: 
       path: /licensing/**
