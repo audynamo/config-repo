@@ -23,6 +23,17 @@ zuul:
     licensing-service: 
       path: /licensing/**
       service-id: licensing-service
+hystrix:
+  command:
+    licensing-service:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 5000
+
+licensing-service:
+  ribbon:
+    ReadTimeout: 5000
 
 management:
   endpoints:
