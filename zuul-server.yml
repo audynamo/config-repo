@@ -15,7 +15,6 @@ eureka:
 
 zuul:
   ignored-services: "*"
-  prefix: /api
   routes:
     organization-service:
       path: /organization/**
@@ -25,9 +24,7 @@ zuul:
       service-id: licensing-service
 
 management:
-  security:
-    enabled: false
-    endpoints:
-      web:
-        exposure:
-          include: info, health, routes
+  endpoints:
+    web:
+      exposure:
+        include: '*'
