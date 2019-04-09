@@ -17,5 +17,9 @@ zuul:
   ignored-services: "*"
   prefix: /api
   routes:
-    organization-service: /organization/**
-    licensing-service: /licensing/**
+    organization-service:
+	  path: /organization/**
+	  service-id: organization-service
+    licensing-service: 
+	  path: /licensing/**
+	  service-id: licensing-service
