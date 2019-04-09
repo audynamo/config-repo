@@ -23,3 +23,11 @@ zuul:
     licensing-service: 
       path: /licensing/**
       service-id: licensing-service
+
+management:
+  security:
+    enabled: false
+    endpoints:
+      web:
+        exposure:
+          include: info, health, routes
