@@ -18,10 +18,11 @@ logging:
     org.springframework.security.jwt: DEBUG
     org.springframework: DEBUG
 
-security:
-  oauth2:
-    resource:
-      userInfoUri: http://localhost:9094/auth/user
+spring:
+  security:
+    oauth2:
+      resource:
+        userInfoUri: http://localhost:9094/auth/user
 
 management:
   endpoints:
