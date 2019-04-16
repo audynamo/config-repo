@@ -23,4 +23,4 @@ logging:
   level:
     org.springframework.security.oauth2: DEBUG
     org.springframework.security.jwt: DEBUG
-	org.springframework: DEBUG
+    org.springframework: DEBUG
